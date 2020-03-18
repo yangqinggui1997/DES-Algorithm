@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7D61A314-2DB9-4B88-883E-8871E80BC558}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DES_Algorithm</RootNamespace>
+    <AssemblyName>DES Algorithm</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Aha-Soft-Free-Large-Boss-Professor.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MahApps.Metro, Version=1.6.5.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\MahApps.Metro.1.6.5\lib\net47\MahApps.Metro.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages\ControlzEx.3.0.2.4\ControlzEx.3.0.2.4.nupkg" />
+    <None Include="packages\Extended.Wpf.Toolkit.3.4.0\Extended.Wpf.Toolkit.3.4.0.nupkg" />
+    <None Include="packages\Extended.Wpf.Toolkit.3.4.0\tools\install.ps1" />
+    <None Include="packages\MahApps.Metro.1.6.5\MahApps.Metro.1.6.5.nupkg" />
+    <None Include="packages\ServiceStack.5.1.0\ServiceStack.5.1.0.nupkg" />
+    <None Include="packages\ServiceStack.Client.5.1.0\lib\netstandard2.0\ServiceStack.Client.deps.json" />
+    <None Include="packages\ServiceStack.Client.5.1.0\ServiceStack.Client.5.1.0.nupkg" />
+    <None Include="packages\ServiceStack.Common.5.1.0\lib\netstandard2.0\ServiceStack.Common.deps.json" />
+    <None Include="packages\ServiceStack.Common.5.1.0\ServiceStack.Common.5.1.0.nupkg" />
+    <None Include="packages\ServiceStack.Interfaces.5.1.0\lib\netstandard2.0\ServiceStack.Interfaces.deps.json" />
+    <None Include="packages\ServiceStack.Interfaces.5.1.0\ServiceStack.Interfaces.5.1.0.nupkg" />
+    <None Include="packages\ServiceStack.Text.5.1.0\lib\netstandard2.0\ServiceStack.Text.deps.json" />
+    <None Include="packages\ServiceStack.Text.5.1.0\ServiceStack.Text.5.1.0.nupkg" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\Close.png" />
+    <Resource Include="Resources\Images\HHover.png" />
+    <Resource Include="Resources\Images\ic_accessibility_white_18pt.png" />
+    <Resource Include="Resources\Images\ic_accessibility_white_24dp.png" />
+    <Resource Include="Resources\Images\ic_account_circle_white_24dp.png" />
+    <Resource Include="Resources\Images\ic_add_shopping_cart_white_24dp.png" />
+    <Resource Include="Resources\Images\ic_add_white_24dp.png" />
+    <Resource Include="Resources\Images\ic_airline_seat_recline_normal_white.png" />
+    <Resource Include="Resources\Images\ic_airline_seat_recline_normal_white_18pt.png" />
+    <Resource Include="Resources\Images\ic_airline_seat_recline_normal_white_24dp.png" />
+    <Resource Include="Resources\Images\ic_alarm_white_24dp.png" />
+    <Resource Include="Resources\Images\ic_assignment_white_24dp.png" />
+    <Resource Include="Resources\Images\ic_autorenew_white_24dp.png" />
+    <Resource Include="Resources\Images\ic_backup_white_24dp.png" />
+    <Resource Include="Resources\Images\ic_border_color_white_24dp.png" />
+    <Resource Include="Resources\Images\ic_business_white_24dp.png" />
+    <Resource Include="Resources\Images\ic_cake_white_24dp.png" />
+    <Resource Include="Resources\Images\ic_check_circle_white_24dp.png" />
+    <Resource Include="Resources\Images\ic_clear_white_48dp.png" />
+    <Resource Include="Resources\Images\ic_close_white_16dp.png" />
+    <Resource Include="Resources\Images\ic_color_lens_white.png" />
+    <Resource Include="Resources\Images\ic_copyright_white_24dp.png" />
+    <Resource Include="Resources\Images\ic_create_white_48dp.png" />
+    <Resource Include="Resources\Images\ic_delete_forever_white_24dp.png" />
+    <Resource Include="Resources\Images\ic_delete_sweep_white_48dp.png" />
+    <Resource Include="Resources\Images\ic_delete_white_24dp.png" />
+    <Resource Include="Resources\Images\ic_description_white_24dp.png" />
+    <Resource Include="Resources\Images\ic_edit_white_24dp.png" />
+    <Resource Include="Resources\Images\ic_edit_white_36dp.png" />
+    <Resource Include="Resources\Images\ic_equalizer_white_24dp.png" />
+    <Resource Include="Resources\Images\ic_error_white_24dp.png" />
+    <Resource Include="Resources\Images\ic_euro_symbol_white_24dp.png" />
+    <Resource Include="Resources\Images\ic_event_note_white_24dp.png" />
+    <Resource Include="Resources\Images\ic_exit_to_app_white_24dp.png" />
+    <Resource Include="Resources\Images\ic_explore_white_24dp.png" />
+    <Resource Include="Resources\Images\ic_fiber_new_white_24dp.png" />
+    <Resource Include="Resources\Images\ic_find_in_page_white_24dp.png" />
+    <Resource Include="Resources\Images\ic_format_paint_white_24dp.png" />
+    <Resource Include="Resources\Images\ic_group_add_white_24dp.png" />
+    <Resource Include="Resources\Images\ic_help_white_24dp.png" />
+    <Resource Include="Resources\Images\ic_highlight_off_white_24dp.png" />
+    <Resource Include="Resources\Images\ic_home_white_24dp.png" />
+    <Resource Include="Resources\Images\ic_https_white_18pt.png" />
+    <Resource Include="Resources\Images\ic_https_white_24dp.png" />
+    <Resource Include="Resources\Images\ic_info_white_24dp.png" />
+    <Resource Include="Resources\Images\ic_input_white_24dp.png" />
+    <Resource Include="Resources\Images\ic_laptop_windows_white.png" />
+    <Resource Include="Resources\Images\ic_library_books_white_24dp.png" />
+    <Resource Include="Resources\Images\ic_local_offer_white_24dp.png" />
+    <Resource Include="Resources\Images\ic_location_city_white_24dp.png" />
+    <Resource Include="Resources\Images\ic_lock_open_white_24dp.png" />
+    <Resource Include="Resources\Images\ic_menu_white_24dp.png" />
+    <Resource Include="Resources\Images\ic_multiline_chart_white_24dp.png" />
+    <Resource Include="Resources\Images\ic_perm_data_setting_white_24dp.png" />
+    <Resource Include="Resources\Images\ic_person_add_white_24dp.png" />
+    <Resource Include="Resources\Images\ic_pie_chart_outlined_white_24dp.png" />
+    <Resource Include="Resources\Images\ic_pie_chart_white_24dp.png" />
+    <Resource Include="Resources\Images\ic_power_settings_new_white_24dp.png" />
+    <Resource Include="Resources\Images\ic_print_white_24dp.png" />
+    <Resource Include="Resources\Images\ic_receipt_white_24dp.png" />
+    <Resource Include="Resources\Images\ic_refresh_white_48dp.png" />
+    <Resource Include="Resources\Images\ic_remove_white_18dp.png" />
+    <Resource Include="Resources\Images\ic_remove_white_48dp.png" />
+    <Resource Include="Resources\Images\ic_reply_white.png" />
+    <Resource Include="Resources\Images\ic_reply_white_48dp.png" />
+    <Resource Include="Resources\Images\ic_report_problem_white_24dp.png" />
+    <Resource Include="Resources\Images\ic_search_white_24dp.png" />
+    <Resource Include="Resources\Images\ic_security_white_18pt.png" />
+    <Resource Include="Resources\Images\ic_security_white_24dp.png" />
+    <Resource Include="Resources\Images\ic_send_white_24dp.png" />
+    <Resource Include="Resources\Images\ic_settings_backup_restore_white.png" />
+    <Resource Include="Resources\Images\ic_shopping_basket_white_24dp.png" />
+    <Resource Include="Resources\Images\ic_shopping_cart_white_24dp.png" />
+    <Resource Include="Resources\Images\ic_show_chart_white_24dp.png" />
+    <Resource Include="Resources\Images\ic_store_white_24dp.png" />
+    <Resource Include="Resources\Images\ic_supervisor_account_white_24dp.png" />
+    <Resource Include="Resources\Images\ic_trending_up_white_24dp.png" />
+    <Resource Include="Resources\Images\ic_view_list_white_24dp.png" />
+    <Resource Include="Resources\Images\ic_vpn_key_white_24dp.png" />
+    <Resource Include="Resources\Images\max.png" />
+    <Resource Include="Resources\Images\plus-symbol-button.png" />
+    <Resource Include="Resources\Images\plus.png" />
+    <Resource Include="Resources\Images\plus1.png" />
+    <Resource Include="Resources\Images\redo-arrow.png" />
+    <Resource Include="Resources\Images\restore.png" />
+    <Resource Include="Resources\Images\Settingshover.png" />
+    <Resource Include="Resources\Images\undo-arrow.png" />
+    <Resource Include="Resources\Images\VisualStudio.70x70.contrast-black_scale-80.png" />
+    <Resource Include="Resources\Images\Winclose.png" />
+    <Resource Include="Resources\Images\window-maximize.png" />
+    <Resource Include="Resources\Images\window-minimize.png" />
+    <Resource Include="Resources\Images\window-restore.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Aha-Soft-Free-Large-Boss-Professor.ico" />
+    <Content Include="packages\ControlzEx.3.0.2.4\lib\net40\ControlzEx.dll" />
+    <Content Include="packages\ControlzEx.3.0.2.4\lib\net40\ControlzEx.pdb" />
+    <Content Include="packages\ControlzEx.3.0.2.4\lib\net40\System.Windows.Interactivity.dll" />
+    <Content Include="packages\ControlzEx.3.0.2.4\lib\net45\ControlzEx.dll" />
+    <Content Include="packages\ControlzEx.3.0.2.4\lib\net45\ControlzEx.pdb" />
+    <Content Include="packages\ControlzEx.3.0.2.4\lib\net45\System.Windows.Interactivity.dll" />
+    <Content Include="packages\ControlzEx.3.0.2.4\lib\net462\ControlzEx.dll" />
+    <Content Include="packages\ControlzEx.3.0.2.4\lib\net462\ControlzEx.pdb" />
+    <Content Include="packages\ControlzEx.3.0.2.4\lib\net462\System.Windows.Interactivity.dll" />
+    <Content Include="packages\Extended.Wpf.Toolkit.3.4.0\lib\net35\WPFToolkit.dll" />
+    <Content Include="packages\Extended.Wpf.Toolkit.3.4.0\lib\net35\Xceed.Wpf.Toolkit.dll" />
+    <Content Include="packages\Extended.Wpf.Toolkit.3.4.0\lib\net40\de\Xceed.Wpf.AvalonDock.resources.dll" />
+    <Content Include="packages\Extended.Wpf.Toolkit.3.4.0\lib\net40\es\Xceed.Wpf.AvalonDock.resources.dll" />
+    <Content Include="packages\Extended.Wpf.Toolkit.3.4.0\lib\net40\fr\Xceed.Wpf.AvalonDock.resources.dll" />
+    <Content Include="packages\Extended.Wpf.Toolkit.3.4.0\lib\net40\hu\Xceed.Wpf.AvalonDock.resources.dll" />
+    <Content Include="packages\Extended.Wpf.Toolkit.3.4.0\lib\net40\it\Xceed.Wpf.AvalonDock.resources.dll" />
+    <Content Include="packages\Extended.Wpf.Toolkit.3.4.0\lib\net40\pt-BR\Xceed.Wpf.AvalonDock.resources.dll" />
+    <Content Include="packages\Extended.Wpf.Toolkit.3.4.0\lib\net40\ro\Xceed.Wpf.AvalonDock.resources.dll" />
+    <Content Include="packages\Extended.Wpf.Toolkit.3.4.0\lib\net40\ru\Xceed.Wpf.AvalonDock.resources.dll" />
+    <Content Include="packages\Extended.Wpf.Toolkit.3.4.0\lib\net40\sv\Xceed.Wpf.AvalonDock.resources.dll" />
+    <Content Include="packages\Extended.Wpf.Toolkit.3.4.0\lib\net40\Xceed.Wpf.AvalonDock.dll" />
+    <Content Include="packages\Extended.Wpf.Toolkit.3.4.0\lib\net40\Xceed.Wpf.AvalonDock.Themes.Aero.dll" />
+    <Content Include="packages\Extended.Wpf.Toolkit.3.4.0\lib\net40\Xceed.Wpf.AvalonDock.Themes.Metro.dll" />
+    <Content Include="packages\Extended.Wpf.Toolkit.3.4.0\lib\net40\Xceed.Wpf.AvalonDock.Themes.VS2010.dll" />
+    <Content Include="packages\Extended.Wpf.Toolkit.3.4.0\lib\net40\Xceed.Wpf.DataGrid.dll" />
+    <Content Include="packages\Extended.Wpf.Toolkit.3.4.0\lib\net40\Xceed.Wpf.Toolkit.dll" />
+    <Content Include="packages\Extended.Wpf.Toolkit.3.4.0\lib\net40\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll" />
+    <Content Include="packages\MahApps.Metro.1.6.5\lib\net40\MahApps.Metro.dll" />
+    <Content Include="packages\MahApps.Metro.1.6.5\lib\net40\MahApps.Metro.pdb" />
+    <Resource Include="Resources\Icons\Aha-Soft-Free-Large-Boss-Professor.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\ic_enhanced_encryption_white_36dp.png" />
+    <Resource Include="Resources\Images\ic_no_encryption_white_36dp.png" />
+    <Resource Include="Resources\Images\ic_attach_file_white_36pt.png" />
+    <Resource Include="Resources\Images\ic_file_download_white_18dp.png" />
+    <Resource Include="packages\MahApps.Metro.1.6.5\lib\net40\MahApps.Metro.xml" />
+    <Content Include="packages\MahApps.Metro.1.6.5\lib\net45\MahApps.Metro.dll" />
+    <Content Include="packages\MahApps.Metro.1.6.5\lib\net45\MahApps.Metro.pdb" />
+    <Resource Include="packages\MahApps.Metro.1.6.5\lib\net45\MahApps.Metro.xml" />
+    <Content Include="packages\MahApps.Metro.1.6.5\lib\net46\MahApps.Metro.dll" />
+    <Content Include="packages\MahApps.Metro.1.6.5\lib\net46\MahApps.Metro.pdb" />
+    <Resource Include="packages\MahApps.Metro.1.6.5\lib\net46\MahApps.Metro.xml" />
+    <Content Include="packages\MahApps.Metro.1.6.5\lib\net47\MahApps.Metro.dll" />
+    <Content Include="packages\MahApps.Metro.1.6.5\lib\net47\MahApps.Metro.pdb" />
+    <Resource Include="packages\MahApps.Metro.1.6.5\lib\net47\MahApps.Metro.xml" />
+    <Content Include="packages\ServiceStack.5.1.0\lib\net45\ServiceStack.dll" />
+    <Resource Include="packages\ServiceStack.5.1.0\lib\net45\ServiceStack.xml" />
+    <Content Include="packages\ServiceStack.5.1.0\lib\netstandard2.0\ServiceStack.dll" />
+    <Resource Include="packages\ServiceStack.5.1.0\lib\netstandard2.0\ServiceStack.xml" />
+    <Content Include="packages\ServiceStack.Client.5.1.0\lib\net45\ServiceStack.Client.dll" />
+    <Resource Include="packages\ServiceStack.Client.5.1.0\lib\net45\ServiceStack.Client.xml" />
+    <Content Include="packages\ServiceStack.Client.5.1.0\lib\netstandard2.0\ServiceStack.Client.dll" />
+    <Resource Include="packages\ServiceStack.Client.5.1.0\lib\netstandard2.0\ServiceStack.Client.xml" />
+    <Content Include="packages\ServiceStack.Common.5.1.0\lib\net45\ServiceStack.Common.dll" />
+    <Resource Include="packages\ServiceStack.Common.5.1.0\lib\net45\ServiceStack.Common.xml" />
+    <Content Include="packages\ServiceStack.Common.5.1.0\lib\netstandard2.0\ServiceStack.Common.dll" />
+    <Resource Include="packages\ServiceStack.Common.5.1.0\lib\netstandard2.0\ServiceStack.Common.xml" />
+    <Content Include="packages\ServiceStack.Interfaces.5.1.0\lib\net45\ServiceStack.Interfaces.dll" />
+    <Resource Include="packages\ServiceStack.Interfaces.5.1.0\lib\net45\ServiceStack.Interfaces.xml" />
+    <Content Include="packages\ServiceStack.Interfaces.5.1.0\lib\netstandard2.0\ServiceStack.Interfaces.dll" />
+    <Resource Include="packages\ServiceStack.Interfaces.5.1.0\lib\netstandard2.0\ServiceStack.Interfaces.xml" />
+    <Content Include="packages\ServiceStack.Text.5.1.0\lib\net45\ServiceStack.Text.dll" />
+    <Resource Include="packages\ServiceStack.Text.5.1.0\lib\net45\ServiceStack.Text.xml" />
+    <Content Include="packages\ServiceStack.Text.5.1.0\lib\netstandard2.0\ServiceStack.Text.dll" />
+    <Resource Include="packages\ServiceStack.Text.5.1.0\lib\netstandard2.0\ServiceStack.Text.xml" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
